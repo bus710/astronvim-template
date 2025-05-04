@@ -1,0 +1,20 @@
+{
+    "setup":{
+        "prefix": ["zig-05-if-else", "zig-if-else"],
+        "description": "Zig if else code snippet",
+        "body":[
+            "const x = 5;",
+            "if (x > 10) {",
+            "    std.debug.print(",
+            "        \"x is greater than 10\\n\",",
+            "        .{},",
+            "    );",
+            "} else {",
+            "    std.debug.print(",
+            "        \"x is less than or equal to 10\\n\",",
+            "        .{},",
+            "    );",
+            "}"
+        ]
+    }
+}

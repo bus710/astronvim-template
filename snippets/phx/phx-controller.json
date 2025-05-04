@@ -1,0 +1,17 @@
+{
+    "setup":{
+        "prefix": ["phx-controller", "phx-ctrl"],
+        "description": "Basic Phoenix Controller snippet",
+        "body":[
+            "defmodule ApiWeb.TestController do",
+	        "  use Phoenix.Controller, formats: [:json]",
+	        "  #alias Api.Module",
+	        "",
+	        "  def show(conn, _params) do",
+		    "    resp = %{resp: \"hello\"}",
+		    "    render(conn, :show, resp)",
+	        "  end",
+            "end"
+        ]
+    }
+}

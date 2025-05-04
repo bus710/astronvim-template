@@ -1,0 +1,27 @@
+{
+    "setup":{
+        "prefix": ["zig-04-concat", "zig-concat"],
+        "description": "Zig string concat code snippet",
+        "body":[
+            "// https://gencmurat.com/en/posts/zig-strings/",
+            "",
+            "// Comptime concat",
+            "const s0 = \"Hello\";",
+            "const s1 = \"World\";",
+            "const s2 = s0 ++ \" \" ++ s1;",
+            "std.debug.print(\"s2: {s}\\n\", .{s2});",
+            "std.debug.print(\"s2: {any}\\n\\n\", .{@TypeOf(s2)});",
+            "",
+            "// Runtime concat",
+            "var arena = std.heap.ArenaAllocator.init(std.heap.page_allocator);",
+            "defer arena.deinit();",
+            "const allocator = arena.allocator();",
+            "const s3 = \"Hello\";",
+            "const s4 = \"World\";",
+            "const s5 = try std.fmt.allocPrint(allocator, \"{s} {s}\", .{s3, s4});",
+            "defer allocator.free(s5);",
+            "std.debug.print(\"s5: {s}\\n\", .{s5});",
+            "std.debug.print(\"s5: {any}\\n\\n\", .{@TypeOf(s5)});"
+        ]
+    }
+}

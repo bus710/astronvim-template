@@ -1,0 +1,34 @@
+{
+    "setup":{
+        "prefix": ["zig-02-array", "zig-array"],
+        "description": "Zig array code snippet",
+        "body":[
+            "// Array literal - anonymous struct",
+            "const ar0 = .{ 1, 2, 3, 4, 5 };",
+            "std.debug.print(\"ar0: {any}\\n\\n\", .{ar0});",
+            "",
+            "// Array declaration",
+            "const ar1 = [4]u8{ 0, 2, 4, 8 };",
+            "std.debug.print(\"ar1: {any}\\n\", .{ar1});",
+            "std.debug.print(\"ar1[1]: {d}\\n\\n\", .{ar1[1]});",
+            "",
+            "// Array declaration with undefined",
+            "var ar2: [8]u8 = undefined;",
+            "@memset(&ar2, 0);",
+            "std.debug.print(\"ar2: {any}\\n\", .{ar2});",
+            "std.debug.print(\"ar2[1]: {d}\\n\", .{ar2[1]});",
+            "std.debug.print(\"ar2[2..ar2.len]: {any}\\n\\n\", .{ar2[2..ar2.len]});",
+            "",
+            "// Array slice",
+            "const sl0 = ar2[0..4];",
+            "std.debug.print(\"sl0: {any}\\n\\n\", .{sl0});",
+            "",
+            "// Array operations",
+            "const ar3 = ar0 ++ ar1;",
+            "std.debug.print(\"ar3: {any}\\n\\n\", .{ar3});",
+            "",
+            "const ar4 = ar0 ** 2;",
+            "std.debug.print(\"ar4: {any}\\n\\n\", .{ar4});"
+        ]
+    }
+}

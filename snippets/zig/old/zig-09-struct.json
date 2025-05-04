@@ -1,0 +1,35 @@
+{
+    "setup":{
+        "prefix": ["zig-09-struct", "zig-struct"],
+        "description": "Zig struct code snippet",
+        "body":[
+            "const std = @import(\"std\");",
+            "",
+            "pub fn main() !void {",
+            "    var user = User.init(\"John Doe\", 30);",
+            "    user.print();",
+            "}",
+            "",
+            "const User = struct {",
+            "    name: []const u8,",
+            "    age: u8,",
+            "    number: []const u8,",
+            "",
+            "    pub fn init(name: []const u8, age: u8) User {",
+            "        return User{",
+            "            .name = name,",
+            "            .age = age,",
+            "            .number = \"555-555-5555\",",
+            "        };",
+            "    }",
+            "",
+            "    pub fn print(self: *User) void {",
+            "        std.debug.print(\"Name: {s}\\n\", .{self.name});",
+            "        std.debug.print(\"Age: {d}\\n\", .{self.age});",
+            "        std.debug.print(\"Number: {s}\\n\", .{self.number});",
+            "        self.number = \"\";",
+            "    }",
+            "};"
+        ]
+    }
+}

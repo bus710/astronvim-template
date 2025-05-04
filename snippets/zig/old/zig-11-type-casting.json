@@ -1,0 +1,12 @@
+{
+    "setup":{
+        "prefix": ["zig-11-type-casting", "zig-type-casting"],
+        "description": "Zig type casting code snippet",
+        "body":[
+            "const x: usize = 500;",
+            "const y = @as(u32, x);",
+            "std.debug.print(\"y: {}\\n\", .{y});",
+            "std.debug.print(\"y: {}\\n\", .{@TypeOf(y)});"
+        ]
+    }
+}
