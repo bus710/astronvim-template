@@ -2,7 +2,7 @@
 --
 
 return {
-  { 'Mofiqul/dracula.nvim' },
+  -- { 'Mofiqul/dracula.nvim' }, -- z04
   {
     "AstroNvim/astroui",
     opts = {
