@@ -1,0 +1,13 @@
+{
+    "setup":{
+        "prefix": ["phx-json"],
+        "description": "Basic Phoenix Controller snippet",
+        "body":[
+            "defmodule ApiWeb.TestJSON do",
+	        "  def show(%{resp: resp}) do",
+		    "    %{resp: resp}",
+	        "  end",
+            "end"
+        ]
+    }
+}

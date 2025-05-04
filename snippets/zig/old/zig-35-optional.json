@@ -1,0 +1,29 @@
+{
+    "setup":{
+        "prefix": ["zig-35-optional"],
+        "description": "Zig optional code snippet",
+        "body":[
+            "const std = @import(\"std\");",
+            "",
+            "pub fn main() !void {",
+            "   var num: ?i32 = 5;",
+            "   const p: *?i32 = &num;",
+            "   num = null;",
+            "   std.debug.print(\"{any}\\n\", .{num});",
+            "   num = 4;",
+            "   std.debug.print(\"{any}\\n\", .{p});",
+            "   std.debug.print(\"{any}\\n\", .{p.*});",
+            "",
+            "   // An example of using orelse",
+            "   num = null;",
+            "   const double = (num orelse 10) * 2;",
+            "   std.debug.print(\"{any}\\n\", .{double});",
+            "",
+            "   // If the num is not null, print it",
+            "   if (num) |nn| {",
+            "       std.debug.print(\"{any}\\n\", .{nn});",
+            "   }",
+            "}"
+        ]
+    }
+}

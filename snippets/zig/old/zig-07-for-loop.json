@@ -1,0 +1,29 @@
+{
+    "setup":{
+        "prefix": ["zig-07-for-loop", "zig-for-loop"],
+        "description": "Zig for loop code snippet",
+        "body":[
+            "const n0 = 10;",
+            "for (0..n0) |i| {",
+            "    std.debug.print(\"{d} \", .{i});",
+            "}",
+            "std.debug.print(\"\\n\", .{});",
+            "const s0 = \"Hello, world!\";",
+            "for (s0) |c| {",
+            "    std.debug.print(\"{c}\", .{c});",
+            "}",
+            "std.debug.print(\"\\n\", .{});",
+            "// Multi sequence for loop",
+            "const s1 = [_][]const u8{ \"aaa\", \"bbb\", \"ccc\" };",
+            "const s2 = [_][]const u8{ \"ddd\", \"eee\", \"fff\" };",
+            "for (s1, s2) |a, b| {",
+            "    std.debug.print(\"{s} {s}\\n\", .{ a, b });",
+            "}",
+            "std.debug.print(\"\\n\", .{});",
+            "// Ranges as indexes",
+            "for (s1, s2, 0..) |a, b, i| {",
+            "    std.debug.print(\"{d}: {s} {s}\\n\", .{ i, a, b });",
+            "}"
+        ]
+    }
+}

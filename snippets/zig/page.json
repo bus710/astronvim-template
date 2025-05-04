@@ -1,0 +1,24 @@
+{
+    "setup":{
+        "prefix": ["zig-page"],
+        "description": "Zig page code snippet",
+        "body":[
+            "pub fn example() !void {",
+            "    const allocator = std.heap.page_allocator;",
+            "    const memory = try allocator.alloc(u8, 1024);",
+            "    defer allocator.free(memory);",
+            "    if (memory.len != 1024) {",
+            "        std.debug.print(\"Allocated memory is not 1024 bytes\\n\", .{});",
+            "        return;",
+            "    }",
+            "    if (@TypeOf(memory) != []u8) {",
+            "        std.debug.print(\"Allocated memory is not of type u8\\n\", .{});",
+            "        return;",
+            "    }",
+            "",
+            "    std.debug.print(\"Allocated memory is 1024 bytes and of type u8\\n\", .{});",
+            "    return;",
+            "}"
+        ]
+    }
+}

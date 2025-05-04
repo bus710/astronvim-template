@@ -1,0 +1,12 @@
+{
+    "setup":{
+        "prefix": ["module"],
+        "description": "kernel module description",
+        "body":[
+            "MODULE_LICENSE(\"GPL\");",
+            "MODULE_AUTHOR(\"bus710 <bus710@gmail.com>\");",
+            "MODULE_DESCRIPTION(\"A simple hello world driver\");",
+            "MODULE_VERSION(\"0.1\");"
+        ]
+    }
+}

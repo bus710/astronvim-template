@@ -1,0 +1,27 @@
+{
+    "setup":{
+        "prefix": ["zig-fixed"],
+        "description": "Zig fixed buffer allocator code snippet",
+        "body":[
+            "pub fn example() !void {",
+            "   var buffer: [1000]u8 = undefined;",
+            "   var fba = std.heap.FixedBufferAllocator.init(&buffer);",
+            "   const allocator = fba.allocator();",
+            "",
+            "   const memory = try allocator.alloc(u8, 100);",
+            "   defer allocator.free(memory);",
+            "",
+            "   if (memory.len == 100) {",
+            "       std.debug.print(\"Allocation successful\\n\", .{});",
+            "   } else {",
+            "       std.debug.print(\"Allocation failed\\n\", .{});",
+            "   }",
+            "   if (@TypeOf(memory) == []u8) {",
+            "       std.debug.print(\"Type check successful\\n\", .{});",
+            "   } else {",
+            "       std.debug.print(\"Type check failed\\n\", .{});",
+            "   }",
+            "}"
+        ]
+    }
+}

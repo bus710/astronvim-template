@@ -1,0 +1,35 @@
+{
+    "setup":{
+        "prefix": ["zig-06-switch", "zig-switch"],
+        "description": "Zig switch code snippet",
+        "body":[
+            "const Role = enum {",
+            "    Admin,",
+            "    User,",
+            "    Guest,",
+            "};",
+            "",
+            "const role = Role.Admin;",
+            "switch (role) {",
+            "    Role.Admin => std.debug.print(\"Admin\\n\", .{}),",
+            "    Role.User => std.debug.print(\"User\\n\", .{}),",
+            "    Role.Guest => std.debug.print(\"Guest\\n\", .{}),",
+            "    else => std.debug.print(\"Unknown role\\n\", .{}),",
+            "}",
+            "",
+            "const result = switch (role) {",
+            "    Role.Admin => \"Admin\",",
+            "    Role.User => \"User\",",
+            "    Role.Guest => \"Guest\",",
+            "};",
+            "std.debug.print(\"{s}\\n\\n\", .{result});",
+            "",
+            "const num = 10;",
+            "switch (num) {",
+            "    0...10 => std.debug.print(\"10\\n\", .{}),",
+            "    11...20 => std.debug.print(\"20\\n\", .{}),",
+            "    else => std.debug.print(\"Other\\n\", .{}),",
+            "}"
+        ]
+    }
+}

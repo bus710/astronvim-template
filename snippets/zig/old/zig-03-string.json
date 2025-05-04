@@ -1,0 +1,39 @@
+{
+    "setup":{
+        "prefix": ["zig-03-string", "zig-string"],
+        "description": "Zig string code snippet",
+        "body":[
+            "const str0 = \"A literal value\";",
+            "std.debug.print(\"str0: {s}\\n\\n\", .{str0});",
+            "",
+            "const str1: []const u8 = \"A string object\";",
+            "std.debug.print(\"str1: {s}\\n\\n\", .{str1});",
+            "",
+            "std.debug.print(\"str1: \", .{});",
+            "for (str1) |c| {",
+            "    std.debug.print(\"{c}\", .{c});",
+            "}",
+            "",
+            "std.debug.print(\"\\n\\n\", .{});",
+            "std.debug.print(\"TypeOf str1: {any}\", .{@TypeOf(str1)});",
+            "",
+            "// How to declare a string of 16 bytes?",
+            "var s0: [16]u8 = undefined;",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});",
+            "std.debug.print(\"s0 type: {any}\\n\", .{@TypeOf(s0)});",
+            "// How to initialize a string of 16 bytes?",
+            "const p0 = &s0;",
+            "@memset(p0, 0);",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});",
+            "// How to set the first byte to 'a'?",
+            "s0[0] = 'a';",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});",
+            "// How to set the first byte to 0?",
+            "@memset(&s0, 0);",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});",
+            "// How to assign a smaller string to a larger array?",
+            "@memcpy(s0[0..\"abc\".len], \"abc\");",
+            "std.debug.print(\"s0: {s}\\n\", .{s0});"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "setup":{
+        "prefix": ["zig-10-anonymous-struct", "zig-anonymous-struct"],
+        "description": "Zig anonymous struct code snippet",
+        "body":[
+            "const std = @import(\"std\");",
+            "",
+            "pub fn main() !void {",
+            "    const user = .{",
+            "        .name = \"John Doe\",",
+            "        .age = 30,",
+            "        .number = 123456789,",
+            "    };",
+            "    _ = user;",
+            "}"
+        ]
+    }
+}
