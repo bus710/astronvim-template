@@ -29,6 +29,7 @@ return {
           "rs",
           "ex",
           "heex",
+          "gleam",
           "svelte",
           "js",
           "ts",
@@ -78,7 +79,7 @@ return {
           "node_modules",
           ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact" },
       },
       --
       --
@@ -94,7 +95,7 @@ return {
           "node_modules",
           ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact" },
         -- Instead of having the init_options.includeLanguages/userLanguages, 
         -- add the includeLanguages under the settings.tailwindCSS.includeLanguages as the issue below suggests
         -- https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1002
@@ -139,6 +140,7 @@ return {
           "eelixir",
           "heex",
           "ex",
+          "gleam",
           "svelte",
           "javascript",
           "typescript",
