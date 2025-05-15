@@ -118,6 +118,7 @@ return {
               elixir = "html-eex",
               eelixir = "html-eex",
               heex = "html-eex",
+              gleam = "gleam"
             },
             experimental = {
               classRegex = {
