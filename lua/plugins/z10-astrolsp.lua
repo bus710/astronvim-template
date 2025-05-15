@@ -121,6 +121,8 @@ return {
               gleam = "gleam"
             },
             experimental = {
+              -- Some css start with class:"" for majority of files
+              -- Some css start with class("") for gleam/lustre
               classRegex = {
                 'class[:]\\s*"([^"]*)"',
                 'class[(]\\s*"([^"]*)"',
