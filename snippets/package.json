@@ -26,8 +26,8 @@
                 "path": "./kernel/module.json"
             },
             {
-                "language": "gleam",
-                "path": "./gleam/index.json"
+                "language": "html",
+                "path": "./html/lustre.json"
             }
         ]
     }

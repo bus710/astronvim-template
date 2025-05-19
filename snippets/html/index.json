@@ -1,7 +1,7 @@
 {
     "setup":{
-        "prefix": ["index"],
-        "description": "Lusture index.html",
+        "prefix": ["index-lusture"],
+        "description": "index.html for lustre",
         "body":[
             "<html lang=\"en\">",
             "  <head>",
