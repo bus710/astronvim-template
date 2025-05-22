@@ -1,6 +1,6 @@
 {
     "setup":{
-        "prefix": ["app.gleam with simple"],
+        "prefix": ["lustre simple"],
         "description": "app.gleam with simple for lustre",
         "body":[
             "import gleam/int",
