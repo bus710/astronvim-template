@@ -28,6 +28,14 @@
             {
                 "language": "html",
                 "path": "./html/index-lustre.json"
+            },
+            {
+                "language": "gleam",
+                "path": "./gleam/lustre-simple.json"
+            },
+            {
+                "language": "gleam",
+                "path": "./gleam/lustre-application.json"
             }
         ]
     }
