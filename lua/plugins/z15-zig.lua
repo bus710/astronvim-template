@@ -5,8 +5,12 @@
 -- :lua print(vim.fn.getcwd())
 
 -- Install either package if lldb gets updated
--- sudo apt install lldb 
--- sudo apt install clangd
+--   $ sudo apt install lldb 
+--   $ sudo apt install clangd
+
+-- If have any issue with DAP:
+--   Please check the lldb-dap version!
+--   Please use underbar for the project name!
 
 
 local dap = require "dap"
