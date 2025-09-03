@@ -18,7 +18,7 @@
 --]
 
 -- For each project, create the .vscode/launch.json file 
--- ... with the get-elixir-vscode-launch-json alias command
+-- ... with the cp-elixir-vscode-launch-json alias command
 
 local dap = require "dap"
 local dapui = require "dapui"

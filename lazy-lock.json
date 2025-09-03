@@ -19,6 +19,7 @@
   "cscope_maps.nvim": { "branch": "main", "commit": "9ea55a369130f168bad5e4c98c8871346dc33ccb" },
   "diffview.nvim": { "branch": "main", "commit": "4516612fe98ff56ae0415a259ff6361a89419b0a" },
   "dracula.nvim": { "branch": "main", "commit": "96c9d19ce81b26053055ad6f688277d655b3f7d2" },
+  "elixir-tools.nvim": { "branch": "main", "commit": "f7e18753f5587b422aac628249fa46c66ed24af3" },
   "flutter-tools.nvim": { "branch": "main", "commit": "8fa438f36fa6cb747a93557d67ec30ef63715c20" },
   "friendly-snippets": { "branch": "main", "commit": "fc8f183479a472df60aa86f00e295462f2308178" },
   "fzf-lua": { "branch": "main", "commit": "fe71a7c072e98e43d448d8d198595ee9ebdcb27a" },
@@ -81,6 +82,5 @@
   "vim-svelte": { "branch": "main", "commit": "0e93ec53c3667753237282926fec626785622c1c" },
   "vim-terraform-completion": { "branch": "master", "commit": "125d0e892f5fd8f32b57a5a5983d03f1aa611949" },
   "vscode-js-debug": { "branch": "main", "commit": "8d8f7cd78e78b81b18feeaf93dbe5f349d2e9b13" },
-  "which-key.nvim": { "branch": "main", "commit": "fcbf4eea17cb299c02557d576f0d568878e354a4" },
-  "zig-tools.nvim": { "branch": "master", "commit": "78a85278fe5d480da2f01df4db898757d7e953b5" }
+  "which-key.nvim": { "branch": "main", "commit": "fcbf4eea17cb299c02557d576f0d568878e354a4" }
 }
