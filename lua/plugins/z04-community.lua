@@ -11,14 +11,14 @@ return {
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   --
   { import = "astrocommunity.pack.go" },
-  -- { import = "astrocommunity.pack.zig" },
+  { import = "astrocommunity.pack.zig" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.gleam" },
   { import = "astrocommunity.pack.bash" },
   --
-  { import = "astrocommunity.pack.elixir-phoenix" },
+  -- { import = "astrocommunity.pack.elixir-phoenix" },
 
   { import = "astrocommunity.pack.elm" },
 
