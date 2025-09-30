@@ -40,6 +40,7 @@ return {
           "typescript",
           "javascriptreact",
           "typescriptreact",
+          "templ"
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -80,7 +81,7 @@ return {
           "node_modules",
           ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact", "templ" },
       },
       --
       --
@@ -96,7 +97,7 @@ return {
           "node_modules",
           ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact", "templ" },
         -- Instead of having the init_options.includeLanguages/userLanguages, 
         -- add the includeLanguages under the settings.tailwindCSS.includeLanguages as the issue below suggests
         -- https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1002
@@ -151,6 +152,7 @@ return {
           "typescript",
           "javascriptreact",
           "typescriptreact",
+          "templ"
         },
       },
     },
