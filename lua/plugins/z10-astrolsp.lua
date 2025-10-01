@@ -83,6 +83,9 @@ return {
         ),
         filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact", "templ" },
       },
+      htmx = {
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact", "templ", "go" },
+      },
       --
       --
       tailwindcss = {
