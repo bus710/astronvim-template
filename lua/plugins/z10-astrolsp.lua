@@ -98,19 +98,22 @@ return {
         -- Instead of having the init_options.includeLanguages/userLanguages, 
         -- add the includeLanguages under the settings.tailwindCSS.includeLanguages as the issue below suggests
         -- https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1002
-        -- init_options = {
-          -- includeLanguages = {
-          --   elixir = "html-eex",
-          --   eelixir = "html-eex",
-          --   heex = "html-eex",
-          -- },
-          -- x
-          -- userLanguages = {
-          --   elixir = "html-eex",
-          --   eelixir = "html-eex",
-          --   heex = "html-eex",
-          -- },
-        -- },
+        init_options = {
+          includeLanguages = {
+            -- elixir = "html-eex",
+            -- eelixir = "html-eex",
+            -- heex = "html-eex",
+            html = "html",
+            templ = "html",
+          },
+          userLanguages = {
+            -- elixir = "html-eex",
+            -- eelixir = "html-eex",
+            -- heex = "html-eex",
+            html = "html",
+            templ = "html",
+          },
+        },
         settings = {
           tailwindCSS = {
             includeLanguages = {
