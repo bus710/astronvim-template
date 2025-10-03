@@ -59,15 +59,15 @@ return {
       html = {
         cmd = { "vscode-html-language-server", "--stdio" },
         root_dir = lspconfig.util.root_pattern(
-          "mix.exs",
           "tailwind.config.js",
-          "tailwind.config.ts",
-          "postcss.config.js",
-          "postcss.config.ts",
           "package.json",
           "node_modules",
           ".git",
           "go.mod"
+          -- "mix.exs",
+          -- "tailwind.config.ts",
+          -- "postcss.config.js",
+          -- "postcss.config.ts",
         ),
         filetypes = {
           "html", "templ", "go", "js", "javascript"
@@ -80,15 +80,15 @@ return {
       tailwindcss = {
         cmd = { "tailwindcss-language-server", "--stdio" },
         root_dir = lspconfig.util.root_pattern(
-          "mix.exs",
           "tailwind.config.js",
-          "tailwind.config.ts",
-          "postcss.config.js",
-          "postcss.config.ts",
           "package.json",
           "node_modules",
           ".git",
           "go.mod"
+          -- "mix.exs",
+          -- "tailwind.config.ts",
+          -- "postcss.config.js",
+          -- "postcss.config.ts",
         ),
         filetypes = {
           "html", "templ", "go", "js", "javascript"
