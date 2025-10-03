@@ -40,7 +40,7 @@ return {
           "typescript",
           "javascriptreact",
           "typescriptreact",
-          "templ"
+          -- "templ"
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -81,10 +81,7 @@ return {
           "node_modules",
           ".git"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact", "templ" },
-      },
-      htmx = {
-        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact", "templ" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact"},
       },
       --
       --
@@ -98,9 +95,10 @@ return {
           "postcss.config.ts",
           "package.json",
           "node_modules",
-          ".git"
+          ".git",
+          "go.mod"
         ),
-        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact", "templ" },
+        filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact"},
         -- Instead of having the init_options.includeLanguages/userLanguages, 
         -- add the includeLanguages under the settings.tailwindCSS.includeLanguages as the issue below suggests
         -- https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1002
@@ -123,7 +121,7 @@ return {
               elixir = "html-eex",
               eelixir = "html-eex",
               heex = "html-eex",
-              gleam = "gleam"
+              gleam = "gleam",
             },
             experimental = {
               -- Some css start with class:"" for majority of files
@@ -155,9 +153,13 @@ return {
           "typescript",
           "javascriptreact",
           "typescriptreact",
-          "templ"
         },
       },
+      --
+      --
+      -- htmx = {
+      --   filetypes = { "html", "elixir", "eelixir", "heex", "ex", "gleam", "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact", "templ"},
+      -- },
     },
     -- customize how language servers are attached
     handlers = {
