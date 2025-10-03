@@ -25,7 +25,9 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          "zig", "go", "rs", "templ", "js", "javascript", "html"
+          "zig", "go", "rs",
+          "js", "javascript",
+          "html","templ"
           -- "ex", "heex", "gleam", 
           -- "svelte", "js", "ts", "jsx", "tsx", "javascript", "typescript", "javascriptreact", "typescriptreact" 
         },
@@ -128,14 +130,14 @@ return {
               go = "html",
               templ = "html",
             },
-            experimental = {
-              -- Some css start with class:"" for majority of files
-              -- Some css start with class("") for gleam/lustre
-              classRegex = {
-                'class[:]\\s*"([^"]*)"',
-                'class[(]\\s*"([^"]*)"',
-              },
-            },
+            -- experimental = {
+            --   -- Some css start with class:"" for majority of files
+            --   -- Some css start with class("") for gleam/lustre
+            --   classRegex = {
+            --     'class[:]\\s*"([^"]*)"',
+            --     'class[(]\\s*"([^"]*)"',
+            --   },
+            -- },
           },
         },
       },
@@ -152,7 +154,7 @@ return {
       --
       htmx = {
         filetypes = {
-          "html", "templ", "go", "js", "javascript"
+          -- "html", "templ", "go", "js", "javascript"
           -- "elixir", "eelixir", "heex", "ex", "gleam",
           -- "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact",
         },
