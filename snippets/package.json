@@ -36,6 +36,18 @@
             {
                 "language": "gleam",
                 "path": "./gleam/lustre-application.json"
+            },
+            {
+                "language": "templ",
+                "path": "./htmx/hx-attr.json"
+            },
+            {
+                "language": "templ",
+                "path": "./htmx/hx-event.json"
+            },
+            {
+                "language": "templ",
+                "path": "./htmx/hx-js-api.json"
             }
         ]
     }

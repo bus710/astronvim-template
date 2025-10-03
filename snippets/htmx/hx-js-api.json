@@ -1,0 +1,98 @@
+{
+  "addClass": {
+    "prefix": ["htmx.addClass"],
+    "body": ["htmx.addClass()"]
+  },
+  "ajax": {
+    "prefix": ["htmx.ajax"],
+    "body": ["htmx.ajax()"]
+  },
+  "closest": {
+    "prefix": ["htmx.closest"],
+    "body": ["htmx.closest()"]
+  },
+  "config": {
+    "prefix": ["htmx.config"],
+    "body": ["htmx.config"]
+  },
+  "createEventSource": {
+    "prefix": ["htmx.createEventSource"],
+    "body": ["htmx.createEventSource"]
+  },
+  "createWebSocket": {
+    "prefix": ["htmx.createWebSocket"],
+    "body": ["htmx.createWebSocket"]
+  },
+  "defineExtension": {
+    "prefix": ["htmx.defineExtension"],
+    "body": ["htmx.defineExtension()"]
+  },
+  "find": {
+    "prefix": ["htmx.find"],
+    "body": ["htmx.find()"]
+  },
+  "findAll": {
+    "prefix": ["htmx.findAll"],
+    "body": ["htmx.findAll()"]
+  },
+  "logAll": {
+    "prefix": ["htmx.logAll"],
+    "body": ["htmx.logAll()"]
+  },
+  "logger": {
+    "prefix": ["htmx.logger"],
+    "body": ["htmx.logger"]
+  },
+  "off": {
+    "prefix": ["htmx.off"],
+    "body": ["htmx.off()"]
+  },
+  "on": {
+    "prefix": ["htmx.on"],
+    "body": ["htmx.on()"]
+  },
+  "onLoad": {
+    "prefix": ["htmx.onLoad"],
+    "body": ["htmx.onLoad()"]
+  },
+  "parseInterval": {
+    "prefix": ["htmx.parseInterval"],
+    "body": ["htmx.parseInterval()"]
+  },
+  "process": {
+    "prefix": ["htmx.process"],
+    "body": ["htmx.process()"]
+  },
+  "remove": {
+    "prefix": ["htmx.remove"],
+    "body": ["htmx.remove()"]
+  },
+  "removeClass": {
+    "prefix": ["htmx.removeClass"],
+    "body": ["htmx.removeClass()"]
+  },
+  "removeExtension": {
+    "prefix": ["htmx.removeExtension"],
+    "body": ["htmx.removeExtension()"]
+  },
+  "swap": {
+    "prefix": ["htmx.swap"],
+    "body": ["htmx.swap()"]
+  },
+  "takeClass": {
+    "prefix": ["htmx.takeClass"],
+    "body": ["htmx.takeClass()"]
+  },
+  "toggleClass": {
+    "prefix": ["htmx.toggleClass"],
+    "body": ["htmx.toggleClass()"]
+  },
+  "trigger": {
+    "prefix": ["htmx.trigger"],
+    "body": ["htmx.trigger()"]
+  },
+  "values": {
+    "prefix": ["htmx.values"],
+    "body": ["htmx.values()"]
+  }
+}

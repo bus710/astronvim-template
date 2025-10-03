@@ -1,0 +1,186 @@
+{
+  "abort": {
+    "prefix": ["htmx:abort"],
+    "body": ["htmx:abort"]
+  },
+  "afterOnLoad": {
+    "prefix": ["htmx:afterOnLoad"],
+    "body": ["htmx:afterOnLoad"]
+  },
+  "afterProcessNode": {
+    "prefix": ["htmx:afterProcessNode"],
+    "body": ["htmx:afterProcessNode"]
+  },
+  "afterRequest": {
+    "prefix": ["htmx:afterRequest"],
+    "body": ["htmx:afterRequest"]
+  },
+  "afterSettle": {
+    "prefix": ["htmx:afterSettle"],
+    "body": ["htmx:afterSettle"]
+  },
+  "afterSwap": {
+    "prefix": ["htmx:afterSwap"],
+    "body": ["htmx:afterSwap"]
+  },
+  "beforeCleanupElement": {
+    "prefix": ["htmx:beforeCleanupElement"],
+    "body": ["htmx:beforeCleanupElement"]
+  },
+  "beforeOnLoad": {
+    "prefix": ["htmx:beforeOnLoad"],
+    "body": ["htmx:beforeOnLoad"]
+  },
+  "beforeProcessNode": {
+    "prefix": ["htmx:beforeProcessNode"],
+    "body": ["htmx:beforeProcessNode"]
+  },
+  "beforeRequest": {
+    "prefix": ["htmx:beforeRequest"],
+    "body": ["htmx:beforeRequest"]
+  },
+  "beforeSwap": {
+    "prefix": ["htmx:beforeSwap"],
+    "body": ["htmx:beforeSwap"]
+  },
+  "beforeSend": {
+    "prefix": ["htmx:beforeSend"],
+    "body": ["htmx:beforeSend"]
+  },
+  "beforeTransition": {
+    "prefix": ["htmx:beforeTransition"],
+    "body": ["htmx:beforeTransition"]
+  },
+  "configRequest": {
+    "prefix": ["htmx:configRequest"],
+    "body": ["htmx:configRequest"]
+  },
+  "confirm": {
+    "prefix": ["htmx:confirm"],
+    "body": ["htmx:confirm"]
+  },
+  "historyCacheError": {
+    "prefix": ["htmx:historyCacheError"],
+    "body": ["htmx:historyCacheError"]
+  },
+  "historyCacheHit": {
+    "prefix": ["htmx:historyCacheHit"],
+    "body": ["htmx:historyCacheHit"]
+  },
+  "historyCacheMiss": {
+    "prefix": ["htmx:historyCacheMiss"],
+    "body": ["htmx:historyCacheMiss"]
+  },
+  "historyCacheMissLoadError": {
+    "prefix": ["htmx:historyCacheMissLoadError"],
+    "body": ["htmx:historyCacheMissLoadError"]
+  },
+  "historyCacheMissLoad": {
+    "prefix": ["htmx:historyCacheMissLoad"],
+    "body": ["htmx:historyCacheMissLoad"]
+  },
+  "historyRestore": {
+    "prefix": ["htmx:historyRestore"],
+    "body": ["htmx:historyRestore"]
+  },
+  "beforeHistorySave": {
+    "prefix": ["htmx:beforeHistorySave"],
+    "body": ["htmx:beforeHistorySave"]
+  },
+  "load": {
+    "prefix": ["htmx:load"],
+    "body": ["htmx:load"]
+  },
+  "noSSESourceError": {
+    "prefix": ["htmx:noSSESourceError"],
+    "body": ["htmx:noSSESourceError"]
+  },
+  "onLoadError": {
+    "prefix": ["htmx:onLoadError"],
+    "body": ["htmx:onLoadError"]
+  },
+  "oobAfterSwap": {
+    "prefix": ["htmx:oobAfterSwap"],
+    "body": ["htmx:oobAfterSwap"]
+  },
+  "oobBeforeSwap": {
+    "prefix": ["htmx:oobBeforeSwap"],
+    "body": ["htmx:oobBeforeSwap"]
+  },
+  "oobErrorNoTarget": {
+    "prefix": ["htmx:oobErrorNoTarget"],
+    "body": ["htmx:oobErrorNoTarget"]
+  },
+  "prompt": {
+    "prefix": ["htmx:prompt"],
+    "body": ["htmx:prompt"]
+  },
+  "pushedIntoHistory": {
+    "prefix": ["htmx:pushedIntoHistory"],
+    "body": ["htmx:pushedIntoHistory"]
+  },
+  "replacedInHistory": {
+    "prefix": ["htmx:replacedInHistory"],
+    "body": ["htmx:replacedInHistory"]
+  },
+  "responseError": {
+    "prefix": ["htmx:responseError"],
+    "body": ["htmx:responseError"]
+  },
+  "sendAbort": {
+    "prefix": ["htmx:sendAbort"],
+    "body": ["htmx:sendAbort"]
+  },
+  "sendError": {
+    "prefix": ["htmx:sendError"],
+    "body": ["htmx:sendError"]
+  },
+  "sseError": {
+    "prefix": ["htmx:sseError"],
+    "body": ["htmx:sseError"]
+  },
+  "sseOpen": {
+    "prefix": ["htmx:sseOpen"],
+    "body": ["htmx:sseOpen"]
+  },
+  "swapError": {
+    "prefix": ["htmx:swapError"],
+    "body": ["htmx:swapError"]
+  },
+  "targetError": {
+    "prefix": ["htmx:targetError"],
+    "body": ["htmx:targetError"]
+  },
+  "timeout": {
+    "prefix": ["htmx:timeout"],
+    "body": ["htmx:timeout"]
+  },
+  "validation:validate": {
+    "prefix": ["htmx:validation:validate"],
+    "body": ["htmx:validation:validate"]
+  },
+  "validation:failed": {
+    "prefix": ["htmx:validation:failed"],
+    "body": ["htmx:validation:failed"]
+  },
+  "validation:halted": {
+    "prefix": ["htmx:validation:halted"],
+    "body": ["htmx:validation:halted"]
+  },
+  "xhr:abort": {
+    "prefix": ["htmx:xhr:abort"],
+    "body": ["htmx:xhr:abort"]
+  },
+  "xhr:loadend": {
+    "prefix": ["htmx:xhr:loadend"],
+    "body": ["htmx:xhr:loadend"]
+  },
+  "xhr:loadstart": {
+    "prefix": ["htmx:xhr:loadstart"],
+    "body": ["htmx:xhr:loadstart"]
+  },
+  "xhr:progress": {
+    "prefix": ["htmx:xhr:progress"],
+    "body": ["htmx:xhr:progress"]
+  }
+}

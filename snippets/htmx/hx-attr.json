@@ -1,0 +1,147 @@
+{
+    "post":{
+        "prefix": ["hx-post"],
+        "body":[
+            "hx-post=\"\""
+        ]
+    },
+    "get":{
+        "prefix": ["hx-get"],
+        "body":[
+            "hx-get=\"\""
+        ]
+    },
+    "delete":{
+        "prefix": ["hx-delete"],
+        "body":[
+            "hx-delete=\"\""
+        ]
+    },
+    "patch":{
+        "prefix": ["hx-patch"],
+        "body":[
+            "hx-patch=\"\""
+        ]
+    },
+    "trigger":{
+        "prefix": ["hx-trigger"],
+        "body":[
+            "hx-trigger=\"\""
+        ]
+    },
+    "target":{
+        "prefix": ["hx-target"],
+        "body":[
+            "hx-target=\"\""
+        ]
+    },
+    "swap":{
+        "prefix": ["hx-swap"],
+        "body":[
+            "hx-swap=\"\""
+        ]
+    },
+    "vals":{
+        "prefix": ["hx-vals"],
+        "body":[
+            "hx-vals=\"\""
+        ]
+    },
+    "params":{
+        "prefix": ["hx-params"],
+        "body":[
+            "hx-params=\"\""
+        ]
+    },
+    "confirm":{
+        "prefix": ["hx-confirm"],
+        "body":[
+            "hx-confirm=\"\""
+        ]
+    },
+    "indicator":{
+        "prefix": ["hx-indicator"],
+        "body":[
+            "hx-indicator=\"\""
+        ]
+    },
+    "sync":{
+        "prefix": ["hx-sync"],
+        "body":[
+            "hx-sync=\"\""
+        ]
+    },
+    "boost":{
+        "prefix": ["hx-boost"],
+        "body":[
+            "hx-boost=\"\""
+        ]
+    },
+    "push-url":{
+        "prefix": ["hx-push-url"],
+        "body":[
+            "hx-push-url=\"\""
+        ]
+    },
+    "select":{
+        "prefix": ["hx-select"],
+        "body":[
+            "hx-select=\"\""
+        ]
+    },
+    "ext":{
+        "prefix": ["hx-ext"],
+        "body":[
+            "hx-ext=\"\""
+        ]
+    },
+    "on":{
+        "prefix": ["hx-on"],
+        "body":[
+            "hx-on=\"\""
+        ]
+    },
+    "disable":{
+        "prefix": ["hx-disable"],
+        "body":[
+            "hx-disable=\"\""
+        ]
+    },
+    "headers":{
+        "prefix": ["hx-headers"],
+        "body":[
+            "hx-headers=\"\""
+        ]
+    },
+    "history":{
+        "prefix": ["hx-history"],
+        "body":[
+            "hx-history=\"\""
+        ]
+    },
+    "added":{
+        "prefix": ["hx-added"],
+        "body":[
+            "hx-added=\"\""
+        ]
+    },
+    "request":{
+        "prefix": ["hx-request"],
+        "body":[
+            "hx-request=\"\""
+        ]
+    },
+    "settling":{
+        "prefix": ["hx-settling"],
+        "body":[
+            "hx-settling=\"\""
+        ]
+    },
+    "swapping":{
+        "prefix": ["hx-swapping"],
+        "body":[
+            "hx-swapping=\"\""
+        ]
+    }    
+}
+ 
