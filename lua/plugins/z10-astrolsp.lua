@@ -25,8 +25,10 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          "zig", "go", "rs", "ex", "heex", "gleam", "templ",
-          "svelte", "js", "ts", "jsx", "tsx", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+          "zig", "go", "rs", "templ", "js", "javascript", "html"
+          -- "ex", "heex", "gleam", 
+          -- "svelte", "js", "ts", "jsx", "tsx", "javascript", "typescript", "javascriptreact", "typescriptreact" 
+        },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
         },
@@ -68,8 +70,10 @@ return {
           "go.mod"
         ),
         filetypes = {
-          "html", "elixir", "eelixir", "heex", "ex", "gleam", "templ",
-          "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact", },
+          "html", "templ", "go", "js", "javascript"
+          -- "elixir", "eelixir", "heex", "ex", "gleam",
+          -- "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact",
+        },
       },
       --
       --
@@ -86,9 +90,11 @@ return {
           ".git",
           "go.mod"
         ),
-        filetypes = { 
-          "html", "elixir", "eelixir", "heex", "ex", "gleam", "templ",
-          "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+        filetypes = {
+          "html", "templ", "go", "js", "javascript"
+          -- "elixir", "eelixir", "heex", "ex", "gleam",
+          -- "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact",
+        },
         -- Instead of having the init_options.includeLanguages/userLanguages, 
         -- add the includeLanguages under the settings.tailwindCSS.includeLanguages as the issue below suggests
         -- https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1002
@@ -108,10 +114,10 @@ return {
         settings = {
           tailwindCSS = {
             includeLanguages = {
-              elixir = "html-eex",
-              eelixir = "html-eex",
-              heex = "html-eex",
-              gleam = "gleam",
+              -- elixir = "html-eex",
+              -- eelixir = "html-eex",
+              -- heex = "html-eex",
+              -- gleam = "gleam",
               templ = "html",
             },
             experimental = {
@@ -129,15 +135,19 @@ return {
       --
       emmet_ls = {
         filetypes = {
-          "html", "elixir", "eelixir", "heex", "ex", "gleam", "templ",
-          "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+          "html", "templ", "go", "js", "javascript"
+          -- "elixir", "eelixir", "heex", "ex", "gleam",
+          -- "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact",
+        },
       },
       --
       --
       htmx = {
         filetypes = {
-          "html", "elixir", "eelixir", "heex", "ex", "gleam", "templ",
-          "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+          "html", "templ", "go", "js", "javascript"
+          -- "elixir", "eelixir", "heex", "ex", "gleam",
+          -- "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact",
+        },
       },
     },
     -- customize how language servers are attached
