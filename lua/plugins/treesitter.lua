@@ -6,6 +6,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   branch = "main", -- Specify the main branch
+  build = ":TSUpdate",
   opts = {
     ensure_installed = {
       "lua",
