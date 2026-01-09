@@ -11,7 +11,7 @@ return {
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   --
   { import = "astrocommunity.pack.go" },
-  -- { import = "astrocommunity.pack.zig" },
+  { import = "astrocommunity.pack.zig" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
