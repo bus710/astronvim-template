@@ -24,7 +24,7 @@ end
 dap.adapters.lldb = {
   type = "executable",
   -- command = "/usr/bin/lldb-vscode-16",
-  command = "/usr/bin/lldb-dap-19",
+  command = "/usr/bin/lldb-dap-21",
   name = "lldb",
 }
 dap.configurations.zig = {
