@@ -27,7 +27,7 @@ return {
         allow_filetypes = { -- enable format on save for specified filetypes only
           "zig", "go", "rs",
           "js", "javascript",
-          "html","templ"
+          "html","templ", "c",
           -- "ex", "heex", "gleam", 
           -- "svelte", "js", "ts", "jsx", "tsx", "javascript", "typescript", "javascriptreact", "typescriptreact" 
         },
@@ -158,6 +158,11 @@ return {
           -- "elixir", "eelixir", "heex", "ex", "gleam",
           -- "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact",
         },
+      },
+      c = {
+        filetypes = {
+          "zig", "c", "h",
+        }
       },
     },
     -- customize how language servers are attached
