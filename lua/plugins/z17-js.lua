@@ -1,3 +1,5 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 -- https://github.com/mxsdev/nvim-dap-vscode-js/issues/14#issuecomment-1514656823
 -- https://miguelcrespo.co/posts/debugging-javascript-applications-with-neovim/
 
