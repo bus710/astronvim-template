@@ -5,8 +5,6 @@
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
 --       as this provides autocomplete and documentation while editing
 
-local lspconfig = require "lspconfig"
-
 ---@type LazySpec
 return {
   "AstroNvim/astrolsp",
@@ -14,7 +12,6 @@ return {
   opts = {
     -- Configuration table of features provided by AstroLSP
     features = {
-      autoformat = true, -- enable or disable auto formatting on start
       codelens = true, -- enable/disable codelens refresh on start
       inlay_hints = false, -- enable/disable inlay hints on start
       semantic_tokens = true, -- enable/disable semantic token highlighting
@@ -52,7 +49,8 @@ return {
       -- "html",
       -- "emmet_ls",
     },
-    -- customize language server configuration options passed to `lspconfig`
+    -- customize language server configuration passed to `vim.lsp.config`
+    -- (client specific config can also live in `lsp/<server_name>.lua` in your config root; see `:h lsp-config`)
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
@@ -60,17 +58,17 @@ return {
       --
       html = {
         cmd = { "vscode-html-language-server", "--stdio" },
-        root_dir = lspconfig.util.root_pattern(
+        root_markers = {
           "tailwind.config.js",
           "package.json",
           "node_modules",
           ".git",
-          "go.mod"
+          "go.mod",
           -- "mix.exs",
           -- "tailwind.config.ts",
           -- "postcss.config.js",
           -- "postcss.config.ts",
-        ),
+        },
         filetypes = {
           "html", "templ", "go", "js", "javascript"
           -- "elixir", "eelixir", "heex", "ex", "gleam",
@@ -81,17 +79,17 @@ return {
       --
       tailwindcss = {
         cmd = { "tailwindcss-language-server", "--stdio" },
-        root_dir = lspconfig.util.root_pattern(
+        root_markers = {
           "tailwind.config.js",
           "package.json",
           "node_modules",
           ".git",
-          "go.mod"
+          "go.mod",
           -- "mix.exs",
           -- "tailwind.config.ts",
           -- "postcss.config.js",
           -- "postcss.config.ts",
-        ),
+        },
         filetypes = {
           "html", "templ", "go", "js", "javascript"
           -- "elixir", "eelixir", "heex", "ex", "gleam",
@@ -118,7 +116,7 @@ return {
         -- },
         settings = {
           tailwindCSS = {
-            userLaunguages = {
+            userLanguages = {
               go = "html",
               templ = "html",
             },
@@ -167,15 +165,15 @@ return {
     },
     -- customize how language servers are attached
     handlers = {
-      -- a function without a key is simply the default handler, functions take two parameters, the server name and the configured options table for that server
-      -- function(server, opts) require("lspconfig")[server].setup(opts) end
+      -- the `*` key modifies the default handler; it takes a single parameter, the server name
+      -- ["*"] = function(server) vim.lsp.enable(server) end
 
-      -- the key is the server that is being setup with `lspconfig`
+      -- the key is the server that is being set up with `vim.lsp.config`
       -- rust_analyzer = false, -- setting a handler to false will disable the set up of that language server
-      -- pyright = function(_, opts) require("lspconfig").pyright.setup(opts) end -- or a custom handler function can be passed
+      -- pyright = function(server) vim.lsp.enable(server) end -- or a custom handler function can be passed
 
-      -- function()
-      --   require("lspconfig")["zls"].setup({
+      -- zls = function(server)
+      --   vim.lsp.config(server, {
       --     settings = {
       --       zls = {
       --         path = "/home/bus710/zig/zig",
@@ -198,6 +196,7 @@ return {
       --       },
       --     },
       --   })
+      --   vim.lsp.enable(server)
       -- end,
       --
     },
@@ -239,12 +238,14 @@ return {
         -- ["<Leader>uY"] = {
         --   function() require("astrolsp.toggles").buffer_semantic_tokens() end,
         --   desc = "Toggle LSP semantic highlight (buffer)",
-        --   cond = function(client) return client.server_capabilities.semanticTokensProvider and vim.lsp.semantic_tokens end,
+        --   cond = function(client)
+        --     return client:supports_method "textDocument/semanticTokens/full" and vim.lsp.semantic_tokens ~= nil
+        --   end,
         -- },
       },
     },
     -- A custom `on_attach` function to be run after the default `on_attach` function
-    -- takes two parameters `client` and `bufnr`  (`:h lspconfig-setup`)
+    -- takes two parameters `client` and `bufnr`  (`:h lsp-attach`)
     on_attach = function(client, bufnr)
       -- this would disable semanticTokensProvider for all clients
       -- client.server_capabilities.semanticTokensProvider = nil

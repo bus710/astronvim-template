@@ -1,25 +1,22 @@
-return {
-    {
-        "folke/lazydev.nvim",
-        ft = "lua", -- only load on lua files
-        opts = {
-            library = {
-                -- See the configuration section for more details
-                -- Load luvit types when the `vim.uv` word is found
-                { path = "luvit-meta/library", words = { "vim%.uv" } },
-            },
-        },
-    },
-    { "Bilal2453/luvit-meta", lazy = true }, -- optional `vim.uv` typings
-    { -- optional completion source for require statements and module annotations
-        "hrsh7th/nvim-cmp",
-        opts = function(_, opts)
-            opts.sources = opts.sources or {}
-            table.insert(opts.sources, {
-                name = "lazydev",
-                group_index = 0, -- set group index to 0 to skip loading LuaLS completions
-            })
-        end,
-    },
-    { "nvim-lua/plenary.nvim" }, -- Lua function helpers
-}
+-- Lua development is handled by AstroNvim v6 core:
+--   - `folke/lazydev.nvim` is set up in `astronvim/plugins/lazydev.lua`
+--   - it already wires the `lazydev` completion source into blink.cmp
+--   - `vim.uv` typings come from `${3rd}/luv/library` (luvit-meta is no longer needed)
+--
+-- So the old v5 setup here (lazydev + luvit-meta + an nvim-cmp source) is redundant
+-- in v6 and has been removed. blink.cmp is the default engine, not nvim-cmp.
+--
+-- If you ever need to add extra type libraries, extend lazydev's `library` here
+-- (core uses `opts_extend = { "library" }`, so these are merged, not replaced):
+--
+-- ---@type LazySpec
+-- return {
+--   "folke/lazydev.nvim",
+--   opts = {
+--     library = {
+--       -- { path = "path/to/your/types", words = { "SomeGlobal" } },
+--     },
+--   },
+-- }
+
+return {}

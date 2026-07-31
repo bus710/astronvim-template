@@ -56,11 +56,9 @@ return {
   --   rustup component add rust-analyzer
   -- To launch the debugger
   --   :RustLsp debuggables
-  {
-    'mrcjkb/rustaceanvim',
-    version = '^5',
-    lazy = false,
-    options = {}
-  },
-  { "Saecki/crates.nvim"},
+  --
+  -- NOTE: rustaceanvim and crates.nvim are provided by `astrocommunity.pack.rust`
+  -- (imported in z04-community.lua), so they are intentionally not pinned here.
+  -- Pinning rustaceanvim to `^5` would conflict with the version the pack ships.
+  -- To override rustaceanvim options, set `vim.g.rustaceanvim` instead of `opts`.
 }
