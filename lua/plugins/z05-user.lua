@@ -23,12 +23,6 @@ return {
     'alvan/vim-closetag'
   },
   --
-  { "vim-erlang/vim-erlang-runtime" },
-  { "vim-erlang/vim-erlang-compiler" },
-  { "vim-erlang/vim-erlang-omnicomplete" },
-  { "vim-erlang/vim-erlang-tags" },
-  { "elixir-editors/vim-elixir" },
-  --
   { "mxsdev/nvim-dap-vscode-js", requires = {"mfussenegger/nvim-dap"}},
   --
   { "akinsho/flutter-tools.nvim" },
