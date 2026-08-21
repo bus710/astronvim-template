@@ -25,7 +25,7 @@ return {
           "zig", "go", "rs",
           "js", "javascript",
           "html","templ", "c",
-          -- "ex", "heex", "gleam", 
+          "ex", "heex", "gleam", 
           -- "svelte", "js", "ts", "jsx", "tsx", "javascript", "typescript", "javascriptreact", "typescriptreact" 
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
@@ -64,14 +64,14 @@ return {
           "node_modules",
           ".git",
           "go.mod",
-          -- "mix.exs",
+          "mix.exs",
           -- "tailwind.config.ts",
           -- "postcss.config.js",
           -- "postcss.config.ts",
         },
         filetypes = {
-          "html", "templ", "go", "js", "javascript"
-          -- "elixir", "eelixir", "heex", "ex", "gleam",
+          "html", "templ", "go", "js", "javascript",
+          "elixir", "eelixir", "heex", "ex", "gleam",
           -- "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact",
         },
       },
@@ -85,14 +85,14 @@ return {
           "node_modules",
           ".git",
           "go.mod",
-          -- "mix.exs",
+          "mix.exs",
           -- "tailwind.config.ts",
           -- "postcss.config.js",
           -- "postcss.config.ts",
         },
         filetypes = {
-          "html", "templ", "go", "js", "javascript"
-          -- "elixir", "eelixir", "heex", "ex", "gleam",
+          "html", "templ", "go", "js", "javascript",
+          "elixir", "eelixir", "heex", "ex", "gleam",
           -- "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact",
         },
         -- Instead of having the init_options.includeLanguages/userLanguages, 
@@ -121,10 +121,10 @@ return {
               templ = "html",
             },
             includeLanguages = {
-              -- elixir = "html-eex",
-              -- eelixir = "html-eex",
-              -- heex = "html-eex",
-              -- gleam = "gleam",
+              elixir = "html-eex",
+              eelixir = "html-eex",
+              heex = "html-eex",
+              gleam = "gleam",
               go = "html",
               templ = "html",
             },
@@ -143,8 +143,8 @@ return {
       --
       emmet_ls = {
         filetypes = {
-          "html", "templ", "go", "js", "javascript"
-          -- "elixir", "eelixir", "heex", "ex", "gleam",
+          "html", "templ", "go", "js", "javascript",
+          "elixir", "eelixir", "heex", "ex", "gleam",
           -- "svelte", "javascript", "typescript", "javascriptreact", "typescriptreact",
         },
       },
