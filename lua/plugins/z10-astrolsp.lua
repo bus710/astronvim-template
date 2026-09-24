@@ -25,7 +25,7 @@ return {
           "zig", "go", "rs",
           "js", "javascript",
           "html","templ", "c",
-          "ex", "heex", "gleam", 
+          "ex", "heex", "gleam", "dart",
           -- "svelte", "js", "ts", "jsx", "tsx", "javascript", "typescript", "javascriptreact", "typescriptreact" 
         },
         ignore_filetypes = { -- disable format on save for specified filetypes

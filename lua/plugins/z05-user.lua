@@ -25,7 +25,7 @@ return {
   --
   { "mxsdev/nvim-dap-vscode-js", requires = {"mfussenegger/nvim-dap"}},
   --
-  { "akinsho/flutter-tools.nvim" },
+  -- flutter-tools is configured in z19-flutter.lua
   --
   { "juliosueiras/vim-terraform-completion" }
 }
